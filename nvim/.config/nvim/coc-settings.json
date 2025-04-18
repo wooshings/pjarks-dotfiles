@@ -8,16 +8,15 @@
     "csharp-ls": {
       "command": "csharp",
       "filetypes": ["cs"],
-      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+      "rootPatterns": ["*.csproj", "*.sln", ".vim/", ".git/", ".hg/"],
+      "semanticTokens.enable": false
     }
   },
   "coc.preferences.formatOnSave": true,
   "suggest.floatConfig": {
-    "border": true,
-    "rounded": true,
-    "maxHeight": 10
+    "border": false,
+    "rounded": false
   },
-  "semanticTokens.enable": true,
   "suggest.completionItemKindLabels": {
     "class": "󰆧 ",
     "text": "󰦨 ",
@@ -41,11 +40,16 @@
   },
   "diagnostic.enableMessage": "never",
   "diagnostic.enable": true,
-  "diagnostic.errorSign": " ",
+  "diagnostic.errorSign": " ",
   "diagnostic.warningSign": " ",
   "diagnostic.infoSign": "ℹ",
   "diagnostic.hintSign": "➤",
   "diagnostic.virtualText": true,
   "diagnostic.virtualTextAlign": "below",
-  "diagnostic.virtualTextCurrentLineOnly": true
+  "diagnostic.virtualTextCurrentLineOnly": true,
+  "coc.source.OmniSharp.enable": true,
+  "coc.source.OmniSharp.shortcut": "󰆧 ",
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
+  "pyright.inlayHints.functionReturnTypes": false
 }
