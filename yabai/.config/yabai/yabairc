@@ -33,6 +33,8 @@ yabai -m rule --add app="Godot" title="Please Confirm..." manage=off
 yabai -m rule --add app="Godot" title=".*Save.*" manage=off
 yabai -m rule --add app="Godot" title=".*Open.*" manage=off
 
+yabai -m rule --add app="Unity DevOps Version Control" manage=off
+
 # include apps
 yabai -m rule --add app="^Unity$" manage=on
 
