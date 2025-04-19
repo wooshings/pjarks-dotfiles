@@ -33,6 +33,9 @@ vim.keymap.set("n", "<C-a>", "$", { desc = "Jump to end of line", silent = true 
 -- Telescope
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<Return>", { desc = "Find Files", silent = true })
 
+-- Ex
+vim.keymap.set("n", "<leader>pf", vim.cmd.Ex, { desc = "Open Newr", silent = true })
+
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window", silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window", silent = true })
