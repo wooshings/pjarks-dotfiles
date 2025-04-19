@@ -1,2 +1,0 @@
-#!/bin/bash
-wezterm -- nvr --servername unity $@
