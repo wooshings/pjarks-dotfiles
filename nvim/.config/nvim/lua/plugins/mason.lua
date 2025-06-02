@@ -17,6 +17,7 @@ return {
 			"saghen/blink.cmp",
 		},
 		config = function()
+			local util = require("lspconfig.util")
 			-- Brief aside: **What is LSP?**
 			--
 			-- LSP is an initialism you've probably heard, but might not understand what it is.
@@ -208,7 +209,7 @@ return {
 			local servers = {
 				-- clangd = {},
 				-- gopls = {},
-				-- pyright = {},
+				pylsp = {},
 				-- rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
@@ -218,20 +219,36 @@ return {
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
 				-- ts_ls = {},
 				--
-
 				lua_ls = {
 					-- cmd = { ... },
 					-- filetypes = { ... },
-					-- capabilities = {},
+					root_dir = util.root_pattern("luarc.json", ".git", "main.lua", "init.lua"), -- <- force proper project root
 					settings = {
 						Lua = {
-							completion = {
-								callSnippet = "Replace",
+							diagnostics = {
+								globals = { "vim", "love" },
 							},
-							-- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-							-- diagnostics = { disable = { 'missing-fields' } },
+							workspace = {
+								checkThirdParty = false,
+								maxPreload = 2000, -- Reduce preload size
+								preloadFileSize = 1000, -- Ignore big files
+								library = {
+									vim.env.VIMRUNTIME,
+								},
+								ignoreDir = { -- Add folders to ignore
+									"node_modules",
+									".git",
+									".vscode",
+									"build",
+									"dist",
+								},
+							},
+							telemetry = {
+								enable = false,
+							},
+							library = { "${3rd}/love2d/library" },
 						},
-					},
+					}, -- capabilities = {},
 				},
 			}
 

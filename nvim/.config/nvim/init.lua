@@ -3,8 +3,11 @@ require("config.keymap")
 require("config.run")
 require("plugins")
 
+local lsp = "coc"
+
 --  PLUGINS
 require("lazy").setup({
+	{ import = "plugins." .. lsp },
 	{ import = "plugins.treesitter" },
 	{ import = "plugins.telescope" },
 	{ import = "plugins.markdown" },
@@ -16,17 +19,13 @@ require("lazy").setup({
 	{ import = "plugins.nvim-tree" },
 	{ import = "plugins.which-key" },
 	{ import = "plugins.telescope" },
-	{ import = "plugins.mason" }, -- or { import = "plugins.coc" }
 	{ import = "plugins.omnisharp" },
 	{ import = "plugins.lazydev" },
 	{ import = "plugins.conform" },
 	{ import = "plugins.cmp" },
 	{ import = "plugins.catppuccin" },
 	{ import = "plugins.barbar" },
-	{ "luisiacc/gruvbox-baby" },
-	{ "rebelot/kanagawa.nvim" },
-	{ "Biscuit-Theme/biscuit" },
-	{ "rose-pine/neovim" },
+	{ import = "plugins.love2d" },
 	{ "tpope/vim-sleuth" },
 	{ "sitiom/nvim-numbertoggle" },
 	{ "Bilal2453/luvit-meta" },

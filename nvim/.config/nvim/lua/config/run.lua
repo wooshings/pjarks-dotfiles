@@ -28,5 +28,5 @@ end
 
 new_run_command("go run .", "go", "Run Go Project")
 new_run_command("cargo run", "rust", "Cargo run")
-new_run_command("python3 main.py", "python", "Run Python Project")
-new_run_command("dotnet run", "csharp", "Run Dotnet Project")
+new_run_command("uv run main.py", "python", "Run Python Project")
+new_run_command("dotnet run Project.cs", "cs", "Run Dotnet Project")
