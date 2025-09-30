@@ -1,8 +1,8 @@
-export EDITOR="/usr/local/bin/nvim"
+export EDITOR="nvim"
 export DOTNET_ROOT="/usr/local/share/dotnet"
 alias py="python3"
 alias pip="python3 -m pip"
-alias border="sh border"
+alias border="sh ~/dotfiles/yabai/.config/yabai/border.sh"
 alias lvim="~/.local/bin/lvim"
 eval "$(starship init zsh)"
 

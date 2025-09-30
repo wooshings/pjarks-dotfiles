@@ -25,7 +25,6 @@ require("lazy").setup({
 	{ import = "plugins.cmp" },
 	{ import = "plugins.catppuccin" },
 	{ import = "plugins.barbar" },
-	{ import = "plugins.love2d" },
 	{ "tpope/vim-sleuth" },
 	{ "sitiom/nvim-numbertoggle" },
 	{ "Bilal2453/luvit-meta" },

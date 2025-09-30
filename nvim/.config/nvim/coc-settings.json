@@ -5,12 +5,6 @@
       "filetypes": ["gdscript"],
       "port": 6005
     },
-    "csharp-ls": {
-      "command": "csharp",
-      "filetypes": ["cs"],
-      "rootPatterns": ["*.csproj", "*.sln", ".vim/", ".git/", ".hg/"],
-      "semanticTokens.enable": false
-    }
   },
   "coc.preferences.formatOnSave": true,
   "suggest.floatConfig": {

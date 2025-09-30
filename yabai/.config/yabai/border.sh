@@ -1,0 +1,3 @@
+#! /bin/sh
+
+borders active_color=0xffc6a0f6 inactive_color=0xff24273a width=10.0 blacklist="iPhone Mirroring"&
