@@ -30,3 +30,14 @@ new_run_command("go run .", "go", "Run Go Project")
 new_run_command("cargo run", "rust", "Cargo run")
 new_run_command("uv run main.py", "python", "Run Python Project")
 new_run_command("dotnet run Project.cs", "cs", "Run Dotnet Project")
+
+
+vim.api.nvim_create_autocmd("BufRead", {
+  pattern = "*.jsx",
+  command = "set filetype=javascriptreact"
+})
+
+vim.api.nvim_create_autocmd("BufRead", {
+  pattern = "*.tsx",
+  command = "set filetype=typescriptreact"
+})

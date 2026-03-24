@@ -3,7 +3,7 @@ require("config.keymap")
 require("config.run")
 require("plugins")
 
-local lsp = "coc"
+local lsp = "mason"
 
 --  PLUGINS
 require("lazy").setup({
@@ -16,7 +16,6 @@ require("lazy").setup({
 	{ import = "plugins.tmux_navigator" },
 	{ import = "plugins.lualine" },
 	{ import = "plugins.autopairs" },
-	{ import = "plugins.nvim-tree" },
 	{ import = "plugins.which-key" },
 	{ import = "plugins.telescope" },
 	{ import = "plugins.omnisharp" },

@@ -45,5 +45,6 @@
   "coc.source.OmniSharp.shortcut": "󰆧 ",
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.parameterTypes": false,
-  "pyright.inlayHints.functionReturnTypes": false
+  "pyright.inlayHints.functionReturnTypes": false,
+  "python.formatting.provider": "null"
 }

@@ -8,7 +8,11 @@ eval "$(starship init zsh)"
 
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
+	if command -v yazi &>/dev/null; then
+		yazi "$@" --cwd-file="$tmp"
+	else
+		nvim .
+	fi
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
 		cd -- "$cwd"
 	fi
