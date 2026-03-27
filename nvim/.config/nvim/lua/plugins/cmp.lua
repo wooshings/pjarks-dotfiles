@@ -71,6 +71,8 @@ return {
 			-- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
 			-- Adjusts spacing to ensure icons are aligned
 			nerd_font_variant = "mono",
+			kind_icons = cmp_kinds,
+			highlight_ns = vim.api.nvim_create_namespace("blink_cmp"),
 		},
 
 		-- (Default) Only show the documentation popup when manually triggered
@@ -88,6 +90,7 @@ return {
 							end,
 						},
 					},
+					treesitter = { "lsp" },
 				},
 			},
 		},
