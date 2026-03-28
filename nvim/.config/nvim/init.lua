@@ -15,8 +15,8 @@ require("lazy").setup({
 	{ import = "plugins.yazi" },
 	{ import = "plugins.tmux_navigator" },
 	{ import = "plugins.lualine" },
-	{ import = "plugins.autopairs" },
 	{ import = "plugins.which-key" },
+	{ import = "plugins.mini" },
 	{ import = "plugins.telescope" },
 	{ import = "plugins.omnisharp" },
 	{ import = "plugins.lazydev" },
@@ -26,5 +26,4 @@ require("lazy").setup({
 	{ import = "plugins.barbar" },
 	{ "tpope/vim-sleuth" },
 	{ "sitiom/nvim-numbertoggle" },
-	{ "Bilal2453/luvit-meta" },
 })
