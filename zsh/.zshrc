@@ -3,7 +3,8 @@ export DOTNET_ROOT="/usr/local/share/dotnet"
 alias py="python3"
 alias pip="python3 -m pip"
 alias border="sh ~/dotfiles/yabai/.config/yabai/border.sh"
-alias lvim="~/.local/bin/lvim"
+alias ts="tailscale"
+alias fetch="fastfetch"
 eval "$(starship init zsh)"
 
 function yy() {

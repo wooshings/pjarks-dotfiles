@@ -59,6 +59,8 @@ return {
 			preset = "none",
 			["<C-k>"] = { "select_prev", "fallback" },
 			["<C-j>"] = { "select_next", "fallback" },
+			["<Up>"] = { "select_prev", "fallback" },
+			["<Down>"] = { "select_next", "fallback" },
 			["<C-i>"] = { "show_signature", "hide_signature", "fallback" },
 			["<Tab>"] = { "accept", "fallback" },
 		},

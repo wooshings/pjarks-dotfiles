@@ -1,0 +1,7 @@
+theme = Catppuccin Mocha
+title = ""
+window-padding-x = 12
+window-padding-y = 8
+macos-titlebar-style = hidden
+mouse-hide-while-typing = true
+font-size = 14
